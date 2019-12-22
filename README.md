@@ -30,7 +30,7 @@ https://blog.n-z.jp/blog/2017-02-19-golang-windows-gui.html
 
 ほとんど上記サイトを採用すればよいので、以下はメモ
 
-'''
+```
 $ go version
 go version go1.13.4 linux/amd64
 
@@ -47,15 +47,13 @@ BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 VERSION_CODENAME=bionic
 UBUNTU_CODENAME=bionic
-'''
+```
 ## 以下 Go関係
-'''
+
+```
 % GOOS=windows GOARCH=amd64 go get github.com/lxn/walk ＃こっちかも GOOS=linux GOARCH=amd64 go get github.com/lxn/walk
 % go get github.com/akavel/rsrc
 % GOOS=windows GOARCH=amd64 rsrc -manifest walk.manifest -o rsrc.syso
 % GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui"
-'''
-
-
-
+```
 
